@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "bebas";
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
 body
 {
     background: #141414;
@@ -21,10 +25,6 @@ rect.highcharts-background
 {
     background-color: #212121;
 }
-.sidenav_space
-{
-    margin-left: 300px;
-}
 
 .container_navbar
 {
@@ -42,9 +42,60 @@ rect.highcharts-background
 .img_logo
 {
     width: auto;
-    height: 100px   ;
+    height: 40px   ;
 }
 table i
 {
     cursor: pointer;
+}
+.botton-abajo
+{
+    margin-top: 20px;
+}
+input
+{
+    color: white;
+}
+.carousel-icon
+{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: -72%;
+    z-index: 2;
+}
+iframe
+{
+    width: 500px;
+    height: 280px;
+}
+.img_noticia_mantenimiento
+{
+    height: 300px;
+    width: auto;
+}
+.bebas
+{
+    font-family: "bebas";
+}
+
+input.select-dropdown.dropdown-trigger
+{
+    color: white;
+}
+@media (min-width: 993px) { 
+
+    .sidenav_space
+    {
+        margin-left: 300px;
+    }
+    .img_logo
+    {
+        width: auto;
+        height: 80px   ;
+    }
+    .container_buscador
+    {
+        padding-left:5%;
+        padding-right:5%;
+    }
 }
