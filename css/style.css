@@ -6,7 +6,84 @@
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
-.sidenav
+/*Parte del dashboard*/
+body.dashboard
+{
+    background: #141414;
+}
+.sidenav.dashboard
+{
+    background: #212121;
+}
+.collapsible-header
+{
+    -moz-user-focus: ignore;
+}
+.grafico
+{
+    min-width: 310px;
+    width: 100%;
+    height: 400px;
+    margin: 2% auto;
+}
+rect.highcharts-background
+{
+    background-color: #212121;
+}
+.container_sidenav
+{
+    padding-left:5%;
+    padding-right:5%;
+}
+.icons_crud
+{
+    margin-right: 0%;
+}
+.img_logo
+{
+    width: auto;
+    height: 40px   ;
+}
+table i
+{
+    cursor: pointer;
+}
+.botton-abajo
+{
+    margin-top: 20px;
+}
+input
+{
+    color: white;
+}
+.carousel-icon
+{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: -72%;
+    z-index: 2;
+}
+iframe
+{
+    width: 500px;
+    height: 280px;
+}
+.img_noticia_mantenimiento
+{
+    height: 300px;
+    width: auto;
+}
+.bebas
+{
+    font-family: "bebas";
+}
+
+input.select-dropdown.dropdown-trigger
+{
+    color: white;
+}
+/*fin del dashboard*/
+.sidenav.public
 {
     padding-top: 3%;
     font-family: "bebas";
@@ -18,31 +95,36 @@
     opacity: 0.95;
     background-color: #141414;
 }
-.sidenav li a
+.sidenav.public li a
 {
     font-family: "bebas";
     font-size: 1.5em;
     color: white;
     margin-bottom: 4%;
 }
-.sidenav li:last-child a
+.sidenav.public li:last-child a
 {
     color: #DA3336;
 }
 
-.sidenav a.close
+.sidenav.public a.close
 {
     margin-bottom: 20%;
     text-align: right;
     float: right;
     color: white;
 }
-.sidenav a.close i
+.sidenav.public a.close i
 {
     font-size: 1.2em;
 }
 
-.sidenav a.iniciar
+.mensaje-advertencia
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidenav.public a.iniciar
 {
     position: absolute;
     text-align: left;
@@ -125,6 +207,7 @@ body
     right: 1%;
     float: right;
 }
+
 .indicador-left
 {
     display: flex;
@@ -243,7 +326,7 @@ section.fondo-equipos .input-field label {
   }
 
   /* label focus color */
-  .modal .input-field input:focus + label,.input-field input[type=text].forms_input:focus + label, .input-field input[type=email].forms_input:focus + label, .input-field textarea.materialize-textarea.forms_input:focus + label  {
+  .input-field input:focus + label,.modal .input-field input:focus + label,.input-field input[type=text].forms_input:focus + label, .input-field input[type=email].forms_input:focus + label, .input-field textarea.materialize-textarea.forms_input:focus + label  {
     color: #ED212A;
   }
   /* label underline focus color */
@@ -319,14 +402,28 @@ nav .nav-wrapper ul li:last-child a
  }
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
+@media (min-width: 993px) { 
+    .sidenav_space
+    {
+        margin-left: 300px;
+    }
+    .img_logo
+    {
+        width: auto;
+        height: 80px   ;
+    }
+    .container_buscador
+    {
+        padding-left:5%;
+        padding-right:5%;
+    }
     .fondo_wolf
-{
-    margin-left: -3%;
-    margin-top: 6.8%;
-    width: 50%;
-    box-shadow: none;
-}
+    {
+        margin-left: -3%;
+        margin-top: 6.8%;
+        width: 50%;
+        box-shadow: none;
+    }
         nav .nav-wrapper ul li a
     {
         font-family: "bebas";
@@ -338,6 +435,10 @@ nav .nav-wrapper ul li:last-child a
     {
         color: #DA3336;
     }
+    .container_navbar
+    {
+        padding-left: 50px;
+    }
 
  }
 
@@ -345,21 +446,21 @@ nav .nav-wrapper ul li:last-child a
 @media (min-width: 1200px) { 
    
     .fondo_wolf
-{
-    margin-left: -3%;
-    margin-top: 6.7%;
-    width: 50%;
-    box-shadow: none;
-}
-nav .nav-wrapper ul li a
-{
-    font-family: "bebas";
-    font-size: 1.5em;
-    
-}
+    {
+        margin-left: -3%;
+        margin-top: 6.7%;
+        width: 50%;
+        box-shadow: none;
+    }
+    nav .nav-wrapper ul li a
+    {
+        font-family: "bebas";
+        font-size: 1.5em;
+        
+    }
 
-nav .nav-wrapper ul li:last-child a
-{
-    color: #DA3336;
-}
+    nav .nav-wrapper ul li:last-child a
+    {
+        color: #DA3336;
+    }
  }

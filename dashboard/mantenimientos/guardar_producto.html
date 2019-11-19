@@ -19,7 +19,7 @@
                     <a  class="brand-logo left">
                         <div>
                             <div class="container_navbar">
-                                Modificar
+                                Nuevo producto
                             </div>
                         </div>
                     </a>               
@@ -31,45 +31,44 @@
 <section>
     <div class="container_sidenav">
       <div class="card grey darken-4 white-text">
-        <h4 class="center-align">Noticia 1</h4>
+        <h4 class="center-align">Producto 1</h4>
         <form>
             <div class="row">
-                <div class=" col s12 m12 center-align">
-                        <img class="img_noticia_mantenimiento" src="../../img/wolf2.png" alt="imagen">
-                </div>
-                <div class="file-field input-field col s12 m6">
-                    <div class="btn red darken-3">
-                        <span>Imagen</span>
-                        <input type="file">
+
+                    <div class="file-field input-field col s12 m6">
+                        <div class="btn red darken-3">
+                            <span>Imagen</span>
+                            <input type="file" multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Uno o mas imagenes">
+                        </div>
                     </div>
-                    <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Ingrese uno o mas imagenes">
+            
+                    <div class="input-field col s12 m6">
+                        <input placeholder="Nombre" id="first_name" type="text" class="validate white-text">
+                        <label for="first_name">Nombre</label>
                     </div>
-                </div>
-                <div class="input-field col s12 m6">
-                    <input placeholder="Titulo" id="first_name" type="text" class="validate white-text">
-                    <label for="first_name">Titulo</label>
-                </div>
-                <div class="input-field col s12 m6">
-                    <input placeholder="SubTitulo" id="first_name" type="text" class="validate white-text">
-                    <label for="first_name">SubTitulo</label>
-                </div>
-                <div class=" col s12 m6 botton-abajo center-align">
-                        <label>
-                            <input type="checkbox" class="filled-in"/>
-                            <span>Mostrar</span>
-                        </label>
-                </div>
-                <div class="col s12 m12 black-text">
-                        <input placeholder="Ingresa fecha" type="text" class="datepicker white-text">
-                </div> 
-                <div class="col s12 m12 center-align">
-                        <a href="../pages/noticias.html" class="waves-effect red btn">Direccion <i class="material-icons right">library_add</i></a>
-                </div>
-                
+                    <div class="input-field col s12 m12">
+                        <textarea id="textarea1" class="materialize-textarea white-text"></textarea>
+                        <label for="textarea1">Textarea</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">attach_money</i>
+                        <input placeholder="0" id="first_name" type="number" class="validate white-text">
+                        <label for="first_name">Precio</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input placeholder="0" id="first_name" type="number" class="validate white-text">
+                        <label for="first_name">Cantidad</label>
+                    </div>
+                    <div class="input-field col s12 m12">
+                            <input placeholder="azul, verde, rosado" id="first_name" type="text" class="validate white-text">
+                            <label for="first_name">Colores</label>
+                    </div>
                 <div>
                     <div class="col s6 m6">
-                        <a href="../pages/noticias.html" class="waves-effect grey darken-3 btn left">Regresar</a>
+                        <a href="../pages/productos.html" class="waves-effect grey darken-3 btn left">Regresar</a>
                     </div>
                     <div class="col s6 m6">
                         <a class="waves-effect red darken-3 btn right">Aceptar</a>
