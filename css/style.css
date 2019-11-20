@@ -6,7 +6,58 @@
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
+.titulos-valores
+{
+    top: 100px;
+    font-family: "bebas";
+    margin-top: -13.291px;
+}
+.valores
+{
+    padding-top: 2em;
+}
+p.quienes-parrafo
+{
+    font-family: "bebas";
+    color: white;
+    font-size: 1.5em;
+    background-image: url("../img/esport.png");
+    background-repeat: no-repeat;
+}
+.quienes-inicio
+{
+    height: auto;
+    background-image: url("../img/wolf3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.quienes-fotos
+{
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.redes
+{
+    height: 30px;
+    width: auto;
+}
+.contenedor-redes 
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+.margin-redes
+{
+    margin-left: 25%;
+    margin-right: 25%;
+}
 /*Parte del dashboard*/
+
 body.dashboard
 {
     background: #141414;
@@ -65,7 +116,9 @@ input
 }
 iframe
 {
-    width: 500px;
+    display: block;
+    margin: auto;
+    width: 100%;
     height: 280px;
 }
 .img_noticia_mantenimiento
@@ -362,6 +415,46 @@ section.fondo-equipos .input-field label {
   }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 600px) {
+    p.quienes-parrafo
+    {
+        font-family: "bebas";
+        color: white;
+        font-size: 1.5em;
+        background-image: url("");
+        background-repeat: no-repeat;
+    }
+    iframe
+    {
+        display: block;
+        margin: auto;
+        width: 500px;
+        height: 280px;
+    }
+    .quienes-inicio
+    {
+        height: auto;
+        background-image: url("../img/wolf3.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;  
+    }
+    .quienes-fotos
+    {
+        height: 400px;
+        width: auto;
+    }
+    .redes
+    {
+        height: 50px;
+        width: auto;
+    }
+    .contenedor-redes 
+    {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+    }
      
     .fondo_wolf
     {
@@ -403,6 +496,20 @@ nav .nav-wrapper ul li:last-child a
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 993px) { 
+    .quienes-inicio
+    {
+        height: auto;
+        background-image: url("../img/wolf3.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .quienes-fotos
+    {
+        height: 500px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
     .sidenav_space
     {
         margin-left: 300px;

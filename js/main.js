@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Slider.init(elems,{
       height: height - (height *0.2)
     });
+    var instances = M.ScrollSpy.init(elems, {
+      scrollOffset:200
+    });
     var flechaderecha = document.querySelector('.indicador-right');
     var flechaizquierda = document.querySelector('.indicador-left');
   
