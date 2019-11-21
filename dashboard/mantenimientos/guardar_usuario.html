@@ -19,7 +19,7 @@
                     <a  class="brand-logo left">
                         <div>
                             <div class="container_navbar">
-                                Nueva categoria
+                                Nuevo usuario
                             </div>
                         </div>
                     </a>               
@@ -31,25 +31,29 @@
 <section>
     <div class="container_sidenav">
       <div class="card grey darken-4 white-text">
-        <h4 class="center-align">Categoria 1</h4>
         <form>
-            <div class="row">
-                <div class="input-field col s12 m12">
-                    <input placeholder="Nombre" id="first_name" type="text" class="validate white-text">
-                    <label for="first_name">Nombre</label>
+          <div class="row">
+            <div class="input-field col s12 m6">
+                <input placeholder="Nombre" id="first_name" type="text" class="validate white-text">
+                <label for="first_name">Nombre</label>
+            </div>
+
+            <div class="input-field col s12 m6 white-text">
+                <select >
+                    <option  value="" disabled selected>Tipo de usuario</option>
+                    <option value="1">Usuario</option>
+                    <option value="2">Administrador</option>
+                </select>
+                <label>Equipo</label>
+            </div>
+            
+            <div>
+                <div class="col s6 m6">
+                    <a href="../pages/usuarios.html" class="waves-effect grey darken-3 btn left">Regresar</a>
                 </div>
-                <div class="input-field col s12 m12">
-                    <textarea id="textarea" class="materialize-textarea white-text"></textarea>
-                    <label for="textarea">Descripcion</label>
-                </div>
-                <div>
-                    <div class="col s6 m6">
-                        <a href="../pages/categorias.html" class="waves-effect grey darken-3 btn left">Regresar</a>
-                    </div>
-                    <div class="col s6 m6">
-                        <a class="waves-effect red darken-3 btn right">Aceptar</a>
-                        <br><br>
-                    </div>
+                <div class="col s6 m6">
+                    <a class="waves-effect red darken-3 btn right">Aceptar</a>
+                    <br><br>
                 </div>
             </div>
               
