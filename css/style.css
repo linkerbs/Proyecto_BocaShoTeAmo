@@ -6,6 +6,61 @@
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
+/*INICIO parte de equipos*/
+.separador_equipos
+{
+    margin-top: 20vh;
+}
+.indicador-right-equipo
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 35vh;
+    font-size: 4em;
+    right: 1%;
+    float: right;
+}
+
+.indicador-left-equipo
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 35vh;
+    font-size: 4em;
+    float: left;
+}
+.logo_hero
+{
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: auto;
+}
+.titulo-equipos
+{
+    margin-top: -50vh;
+    font-family: "bebas";
+}
+.big_hero-equipo
+{
+    width: 100%;
+    height: 60vh;
+}
+@supports(object-fit: cover){
+    .big_hero-equipo{
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+/*FIN parte de equipos*/
 .titulos-valores
 {
     top: 100px;
@@ -415,6 +470,10 @@ section.fondo-equipos .input-field label {
   }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 600px) {
+    .separador_equipos
+    {
+        margin-top: 25vh;
+    }
     p.quienes-parrafo
     {
         font-family: "bebas";
@@ -496,6 +555,60 @@ nav .nav-wrapper ul li:last-child a
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 993px) { 
+    .separador_equipos
+    {
+        margin-top: 23vh;
+    }
+    .indicador-right-equipo
+    {
+        display: flex;
+        justify-content: center;
+        color: white;
+        position: absolute;
+        z-index: 3;
+        top: 50vh;
+        font-size: 4em;
+        right: 1%;
+        float: right;
+        cursor: pointer;
+    }
+
+    .indicador-left-equipo
+    {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        color: white;
+        position: absolute;
+        z-index: 3;
+        top: 50vh;
+        font-size: 4em;
+        float: left;
+    }
+    .logo_hero
+    {
+        display: block;
+        margin: auto;
+        height: 350px;
+        width: auto;
+    }
+    .big_hero-equipo
+    {
+        width: 100%;
+        height: 90vh;
+    }
+    @supports(object-fit: cover){
+        .big_hero-equipo{
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+    .titulo-equipos
+    {
+        font-size: 5em;
+        margin-top: -80vh;
+        font-family: "bebas";
+    }
     .quienes-inicio
     {
         height: auto;
