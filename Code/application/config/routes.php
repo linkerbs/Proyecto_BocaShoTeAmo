@@ -60,3 +60,6 @@ $route['patrocinadorDelete/(:any)']['delete'] = "/index.php/patrocinador/delete/
 $route['patrocinador/(:num)'] = '/patrocinador/index';
 $route['afiliado/(:num)'] = '/afiliado/index';
 $route['noticia/(:num)'] = '/noticia/index';
+$route['equipo/(:num)'] = '/equipo/index';
+$route['jugador/(:num)'] = '/jugador/index';
+$route['producto/(:num)'] = '/producto/index';

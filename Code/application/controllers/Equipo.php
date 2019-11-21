@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class noticia extends CI_Controller {
+class Equipo extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -25,7 +25,7 @@ class noticia extends CI_Controller {
 		parent::__construct();
 		
 		// Load url helper
-		$this->load->model('Noticia_model');
+		$this->load->model('Equipo_model');
         $this->load->helper('url_helper');
         $this->load->helper('form');
 		$this->load->library('form_validation');
@@ -37,23 +37,23 @@ class noticia extends CI_Controller {
 	public function create()
 	{
 		
-		$this->load->view('dashboard/noticia/create');
+		$this->load->view('dashboard/equipo/create');
     }
     	
 	public function index()
 	{ 
 		$config = array();
-        $config["base_url"] = base_url() . "/index.php/noticia";
-        $config["total_rows"] = $this->Noticia_model->get_count();
+        $config["base_url"] = base_url() . "/index.php/equipo";
+        $config["total_rows"] = $this->Equipo_model->get_count();
         $config["per_page"] = 2;
 		$config["uri_segment"] = 2;
 		$this->pagination->initialize($config);
         $page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
        
         $data["links"] = $this->pagination->create_links();
-		$noticias=new noticia_model;
-		$data['data']=$noticias->get_noticias($config["per_page"], $page); 
-		$this->load->view('dashboard/noticia/noticia',$data);
+		$equipos=new Equipo_model;
+		$data['data']=$equipos->get_equipos($config["per_page"], $page); 
+		$this->load->view('dashboard/equipo/equipo',$data);
 		
 	}
 	/**
@@ -63,7 +63,7 @@ class noticia extends CI_Controller {
 	*/
 	public function store()
 	{
-		$config['upload_path']          = './assets/img/noticia';
+		$config['upload_path']          = './assets/img/equipo';
 		$config['allowed_types']        = 'gif|jpg|png';
 		$config['max_size']             = 1000;
 		$config['max_width']            = 1920;
@@ -87,10 +87,10 @@ class noticia extends CI_Controller {
 				$data['Logo'] = $upload_data['file_name'];
 
 				
-				$noticias=new noticia_model;
+				$equipos=new Equipo_model;
 				
-				$noticias->insert_noticia($data['Logo'] );				
-				redirect( base_url('index.php/noticia')); 				
+				$equipos->insert_equipo($data['Logo'] );				
+				redirect( base_url('index.php/equipo')); 				
 		}
 	}
 		
@@ -101,8 +101,8 @@ class noticia extends CI_Controller {
 	*/
 	public function edit($Id)
 	{
-		$noticia = $this->db->get_where('noticia', array('Id' => $Id))->row();    
-		$this->load->view('dashboard/noticia/edit',array('noticia'=>$noticia));
+		$equipo = $this->db->get_where('equipo', array('Id' => $Id))->row();    
+		$this->load->view('dashboard/equipo/edit',array('equipo'=>$equipo));
 	}
 	/**
 	 * Update Data from this method.
@@ -111,10 +111,10 @@ class noticia extends CI_Controller {
 	*/
 	public function update($id)
 	{
-		$noticia=new noticia_model;
+		$equipo=new Equipo_model;
 		
 		echo "ADIOS";
-		$config['upload_path']          = './assets/img/noticia';
+		$config['upload_path']          = './assets/img/equipo';
 		$config['allowed_types']        = 'gif|jpg|png';
 		$config['max_size']             = 1000;
 		$config['max_width']            = 1920;
@@ -138,10 +138,10 @@ class noticia extends CI_Controller {
 				$data['Logo'] = $upload_data['file_name'];
 
 				
-				$noticiaes=new noticia_model;
+				$equipoes=new equipo_model;
 				
-				$noticiaes->update_noticia($id,$data['Logo']);				
-				redirect( base_url('index.php/noticia')); 				
+				$equipoes->update_equipo($id,$data['Logo']);				
+				redirect( base_url('index.php/equipo')); 				
 		}
 		
 		
@@ -155,9 +155,9 @@ class noticia extends CI_Controller {
 	public function delete($Id)
 	{
 		$this->db->where('Id', $Id);
-		$this->db->delete('noticia');
+		$this->db->delete('equipo');
 		
-		redirect( base_url('index.php/noticia')); 	
+		redirect( base_url('index.php/equipo')); 	
 	}
  
  

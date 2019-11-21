@@ -31,17 +31,16 @@
 <section>
     <div class="container_sidenav">
       <div class="card grey darken-4 white-text">
-        <h4 class="center-align">Editando <?php echo $patrocinador->Nombre?></h4>
-        <?php echo form_open_multipart('patrocinador/update/'.$patrocinador->Id);?>
+        <h4 class="center-align">Editando <?php echo $equipo->Nombre?></h4>
+        <?php echo form_open_multipart('equipo/update/'.$equipo->Id);?>
           <div class="row">
             <div class="input-field col s12 m6">
-                <input id="first_name" type="text" class="validate white-text" value = "<?php echo $patrocinador->Nombre?>" name = "Nombre">
-                <label for="first_name"></label>
+                <input placeholder="Nombre" id="first_name" type="text" class="validate white-text" value = "<?php echo $equipo->Nombre?>" name = "Nombre">
+                <label for="first_name">nombre</label>
             </div>
 
             <div class="file-field input-field col s12 m6">
-            <div class="file-field input-field col s12 m6">
-                <div class="btn red darken-3">
+            <div class="btn red darken-3">
                     <span>Imagen</span>
                     <input type="file" name="Logo" size="20" />
                 </div>
@@ -49,11 +48,10 @@
                     <input class="file-path validate" type="text">
                 </div>
             </div>
-            </div>
-            
+
             <div>
                 <div class="col s6 m6">
-                    <a href="<?php echo base_url()?>'index.php/patrocinador/'" class="waves-effect grey darken-3 btn left">Regresar</a>
+                    <a href=".<?= site_url('equipo/'); ?>" class="waves-effect grey darken-3 btn left">Regresar</a>
                 </div>
                 <div class="col s6 m6">
                 <button type="submit" value = "upload" class="btn btn-primary">Aceptar</button>
@@ -72,5 +70,5 @@
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/highcharts.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/tema.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/grafics.js"></script>
-  </body>
+</body>
 </html>
