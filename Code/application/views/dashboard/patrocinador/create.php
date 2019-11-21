@@ -34,7 +34,7 @@
                     <div class="mensaje-advertencia"><i class="material-icons left">warning</i> Las redes se agregaran despues en el apartado de Patrocinadores</div>
                 </div>
           </div>
-        <form action="<?= site_url('/patrocinador/store'); ?>" method="POST" name="edit_patrocinador">
+        <?php echo form_open_multipart('patrocinador/store');?>
           <div class="row">
             <div class="input-field col s12 m6">
                 <input placeholder="Nombre" id="first_name" type="text" class="validate white-text" name="Nombre">
@@ -44,7 +44,7 @@
             <div class="file-field input-field col s12 m6">
                 <div class="btn red darken-3">
                     <span>Imagen</span>
-                    <input type="file" name="Logo">
+                    <input type="file" name="Logo" size="20" />
                 </div>
                 <div class="file-path-wrapper">
                     <input class="file-path validate" type="text">
@@ -53,10 +53,10 @@
             
             <div>
                 <div class="col s6 m6">
-                    <a href="/pages/patrocinadores.html" class="waves-effect grey darken-3 btn left">Regresar</a>
+                    <a href="<?= site_url('patrocinador/'); ?>" class="waves-effect grey darken-3 btn left">Regresar</a>
                 </div>
                 <div class="col s6 m6">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" value = "upload" class="btn btn-primary">Aceptar</button>
                     <br><br>
                 </div>
             </div>

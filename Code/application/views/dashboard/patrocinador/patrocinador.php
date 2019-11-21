@@ -29,48 +29,48 @@
     </section>
     <!--Sidenav-->
     <section>
-      <ul id="slide-out" class="sidenav sidenav-fixed dashboard">
-              <li><div class="user-view">
-                <div class="background">
-                  <img src="<?php echo base_url();?>assets/img/wolf3.png" class="responsive-img">
-                </div>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">Administrador</span></a>
-              </div></li>
-              <div>
-              <li><a href="index.html" class="waves-effect collapsible-header red  white-text"><i class="material-icons white-text">attach_money</i>Ventas</a></li>
-              <ul class="collapsible collapsible-accordion">
-                  <li class="red darken-1 active">
-                  <a class="waves-effect collapsible-header white-text"><i class="material-icons white-text">business_center</i>Patrons<i class="material-icons white-text right">arrow_drop_down</i></a>
-                  <div class="collapsible-body grey darken-4 ">
-                      <ul>
-                          <li><a class="white-text" href="patrocinadores.html"><i class="material-icons white-text">business</i>Patrocinadores</a></li>
-                          <li><a class="white-text" href="afiliados.html"><i class="material-icons white-text">event_note</i>Afiliados</a></li>
-                      </ul>
-                  </div>
-                  </li>   
-                  <li class="red darken-2">
-                  <a class="waves-effect collapsible-header white-text"><i class="material-icons white-text">people</i>Equipos<i class="material-icons white-text right">arrow_drop_down</i></a>
-                  <div class="collapsible-body grey darken-4">
-                      <ul>
-                          <li><a class="white-text" href="equipos.html"><i class="material-icons white-text">perm_contact_calendar</i>Equipos</a></li>
-                          <li><a class="white-text" href="jugadores.html"><i class="material-icons white-text">person_pin</i>Jugadores</a></li>
-                      </ul>
-                  </div>
-                  </li>
-                  <li class="red darken-3">
-                  <a class="waves-effect  collapsible-header white-text"><i class="material-icons white-text">shopping_cart</i>Productos<i class="material-icons white-text right">arrow_drop_down</i></a>
-                  <div class="collapsible-body grey darken-4">
-                      <ul>
-                      <li><a class="white-text" href="categorias.html"><i class="material-icons white-text">shopping_basket</i>Categorias</a></li>
-                      <li><a class="white-text" href="prodructos.html"><i class="material-icons white-text">add_shopping_cart</i>Productos</a></li>
-                      </ul>
-                  </div>
-                  </li>
-              </ul>
-              <li><a href="noticias.html" class="waves-effect collapsible-header red darken-4  white-text"><i class="material-icons white-text">insert_chart</i>Noticias</a></li>
-              <li><a href="config.html" class="waves-effect collapsible-header red accent-4  white-text"><i class="material-icons white-text">account_circle</i>Configuracion</a></li>
-              </ul>
+            <ul id="slide-out" class="sidenav sidenav-fixed dashboard">
+                    <li><div class="user-view">
+                      <div class="background">
+                        <img src="<?php echo base_url();?>assets/img/wolf3.png" class="responsive-img">
+                      </div>
+                      <a href="#name"><span class="white-text name">John Doe</span></a>
+                      <a href="#email"><span class="white-text email">Administrador</span></a>
+                    </div></li>
+                    <div>
+                    <li><a href="index.html" class="waves-effect collapsible-header red  white-text"><i class="material-icons white-text">attach_money</i>Ventas</a></li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="red darken-1">
+                        <a class="waves-effect collapsible-header white-text"><i class="material-icons white-text">business_center</i>Patrons<i class="material-icons white-text right">arrow_drop_down</i></a>
+                        <div class="collapsible-body grey darken-4">
+                            <ul>
+                                <li><a class="white-text" href="<?= site_url('patrocinador/'); ?>"><i class="material-icons white-text">business</i>Patrocinadores</a></li>
+                                <li><a class="white-text" href="<?= site_url('afiliado/'); ?>"><i class="material-icons white-text">event_note</i>Afiliados</a></li>
+                            </ul>
+                        </div>
+                        </li>   
+                        <li class="red darken-2">
+                        <a class="waves-effect collapsible-header white-text"><i class="material-icons white-text">people</i>Equipos<i class="material-icons white-text right">arrow_drop_down</i></a>
+                        <div class="collapsible-body grey darken-4">
+                            <ul>
+                                <li><a class="white-text" href="<?= site_url('equipo/'); ?>"><i class="material-icons white-text">perm_contact_calendar</i>Equipos</a></li>
+                                <li><a class="white-text" href="<?= site_url('jugador/'); ?>"><i class="material-icons white-text">person_pin</i>Jugadores</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="red darken-3">
+                        <a class="waves-effect  collapsible-header white-text"><i class="material-icons white-text">shopping_cart</i>Productos<i class="material-icons white-text right">arrow_drop_down</i></a>
+                        <div class="collapsible-body grey darken-4">
+                            <ul>
+                            <li><a class="white-text" href="<?= site_url('categoria/'); ?>"><i class="material-icons white-text">shopping_basket</i>Categorias</a></li>
+                            <li><a class="white-text" href="<?= site_url('producto/'); ?>"><i class="material-icons white-text">add_shopping_cart</i>Productos</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                    <li><a href="<?= site_url('noticia/'); ?>" class="waves-effect collapsible-header red darken-4  white-text"><i class="material-icons white-text">insert_chart</i>Noticias</a></li>
+                    <li><a href="<?= site_url('usuario/'); ?>" class="waves-effect collapsible-header red accent-4  white-text"><i class="material-icons white-text">account_circle</i>Configuracion</a></li>
+                    </ul>
     </section>
   <!--Contenido-->
   <section>
@@ -101,20 +101,25 @@
             </thead>
     
             <tbody>
+            <?php foreach ($data as $list): ?>
               <tr>
                   <tr>
-                      <td>Hyper X</td>
-                      <td><img class="img_logo" src="<?php echo base_url();?>assets/img/hyper.png" alt="logo"></td>
+                      <td><?php echo $list->Nombre; ?></td>
+                      <td><img class="img_logo" src="<?php echo base_url();?>assets/img/patrocinador/<?php echo $list->Logo; ?>" alt="logo"></td>
                       <td>
                           <a class="waves-effect  btn red darken-3 modal-trigger" href="#modal2">Redes</a>
                       </td>
                       <td>
-                          <a href="../mantenimientos/modi_patrocinador.html"><i class="material-icons blue-text">edit</i></a>
-                          <i class="material-icons red-text">delete</i>
+                      <form method="DELETE" action="<?php echo base_url('index.php/patrocinador/delete/'.$list->Id);?>">
+                       <a href="<?php echo base_url('index.php/patrocinador/edit/'.$list->Id)?>"><i class="material-icons blue-text">edit</i></a>
+                       <button type="submit" class="btn btn-danger btn-xs"></button>
+                      </form>            
                       </td>
               </tr>
+              <?php endforeach ?>
             </tbody>
           </table> 
+          <p><?php echo $links; ?></p>
 
         <!-- Modal Structure 2-->
         <div id="modal2" class="modal">
