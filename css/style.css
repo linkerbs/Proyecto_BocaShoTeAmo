@@ -5,25 +5,57 @@
 @font-face {
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}   
+/*INICIO parte de jugadores*/
+.card-text
+{
+    font-family: "bebas";
 }
+.titulo-jugador
+{
+    font-family: "bebas";
+    margin-top: -10vh;
+}
+.jugador-img
+{
+    height: 30vh;
+    width: auto;
+}@supports(object-fit: cover){
+    .jugador-img{
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+/*FIN parte de jugadores*/
+
 /*INICIO parte de equipos*/
 .separador_equipos
 {
     margin-top: 20vh;
 }
-.indicador-right-equipo
+.indicador-down-equipo
 {
     cursor: pointer;
     display: flex;
     justify-content: center;
     color: white;
-    position: absolute;
+    margin-top: 2vh;
     z-index: 3;
-    top: 35vh;
     font-size: 4em;
-    right: 1%;
-    float: right;
 }
+.indicador-right-equipo
+    {
+        display: flex;
+        justify-content: center;
+        color: white;
+        position: absolute;
+        z-index: 3;
+        top: 35vh;
+        font-size: 4em;
+        right: 1%;
+        float: right;
+        cursor: pointer;
+    }
 
 .indicador-left-equipo
 {
@@ -39,8 +71,10 @@
 }
 .logo_hero
 {
+    
     display: block;
     margin: auto;
+    margin-top: 2vh;
     height: 150px;
     width: auto;
 }
@@ -82,9 +116,15 @@ p.quienes-parrafo
 .quienes-inicio
 {
     height: auto;
+    width: 100%;
     background-image: url("../img/wolf3.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}@supports(object-fit: cover){
+    .quienes-inicio{
+        object-fit: cover;
+        object-position: center center;
+    }
 }
 .quienes-fotos
 {
@@ -495,10 +535,15 @@ section.fondo-equipos .input-field label {
         background-image: url("../img/wolf3.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;  
+    }@supports(object-fit: cover){
+        .quienes-inicio{
+            object-fit: cover;
+            object-position: center center;
+        }
     }
     .quienes-fotos
     {
-        height: 400px;
+        height: 300px;
         width: auto;
     }
     .redes
@@ -555,6 +600,38 @@ nav .nav-wrapper ul li:last-child a
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 993px) { 
+    /*INICIO parte de jugadores*/
+    .indicador-down-equipo
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 6.5vh;
+    z-index: 3;
+    top: 90vh;
+    font-size: 4em;
+}
+    .card-text
+    {
+        font-family: "bebas";
+    }
+    .titulo-jugador
+    {
+        font-family: "bebas";
+        margin-top: -10%;
+    }
+    .jugador-img
+    {
+        height: 30vh;
+        width: auto;
+    }@supports(object-fit: cover){
+        .jugador-img{
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+    /*FIN parte de jugadores*/
     .separador_equipos
     {
         margin-top: 23vh;
@@ -615,6 +692,11 @@ nav .nav-wrapper ul li:last-child a
         background-image: url("../img/wolf3.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
+    }@supports(object-fit: cover){
+        .quienes-inicio{
+            object-fit: cover;
+            object-position: center center;
+        }
     }
     .quienes-fotos
     {
