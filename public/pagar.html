@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+  <!--Navbar-->
+  <section>
+  <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper" >
+          <a  class="brand-logo left"><img class="fondo_wolf"src="../img/navbar.png" alt="wolf logo"></a>
+          <a href="#modalini" class=" brand-logo iniciar_sesion hide-on-med-and-down modal-trigger">Iniciar sesión</a>
+          <!--Inicio parte escondida-->
+          <a href="pagar.html" class="brand-logo center waves-effect waves-light white-text hide-on-large-only"><i class="material-icons right">shopping_cart</i>4</a>
+          <!--Fin parte escondida-->
+          <!--Inicio parte escondida-->
+            <a class=" brand-logo iniciar_sesion hide-on-med-and-down hide">Erick Bonilla</a>
+          <!--Fin parte escondida-->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="large material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <!--Inicio parte escondida-->
+                <li><a href="pagar.html" class="waves-effect waves-light white-text"><i class="material-icons right">shopping_cart</i>4</a></li>
+            <!--Fin parte escondida-->
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav public" id="mobile-demo">
+      <a class="iniciar modal-trigger" href="#modalini">Iniciar sesión</a>
+      <!--Inicio parte escondida-->
+        <a href="index.html" class="iniciar white-text hide">Erick Bonilla</a>
+      <!--Fin parte escondida-->
+      <a class="close sidenav-close" href="#"><i class="material-icons">close</i></a>
+      <li><a href="index.html" class=" white-text">Regresar</a></li> 
+    </ul>
+    <!-- Modal Structure -->
+    <div id="modalini" class="modal">
+        <div class="modal-content grey darken-3">
+          <h4 class="white-text modal-text">Iniciar sesión</h4>
+          <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12 m12">
+                  <input placeholder="example@gmail.com" id="usu" type="text" class="validate white-text">
+                  <label for="usu"  class="white-text">Correo o telefono</label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="input-field col s12 m12">
+                    <input placeholder="Password" id="pas" type="password" class="validate white-text">
+                    <label for="pas" class="white-text">Password</label>
+                  </div>
+              </div>
+                  <span class="white-text">¿No tienes cuenta? <a class="carmesi-text" href="register.html"><b>Registrate</b></a></span>
+          
+        </div>
+        <div class="modal-footer grey darken-4">
+          <a href="#!" class="modal-close red darken-2 waves-effect waves-white btn-flat white-text right">Iniciar sesión</a>
+          <a href="#!" class="modal-close  waves-effect waves-red btn-flat white-text left">Regresar</a>
+        </div>
+      </form> 
+      </div>
+  </section>
+  <!--Jugadores-->
+  <section>
+      <form action="">
+          <div class="container">
+                <div class="col s12 m12 margin-nav ">
+                    <a href="Tienda.html" class="waves-effect waves-light white-text btn grey darken-3"><i class="material-icons left white-text">arrow_back</i>Regresar</a>
+                </div>
+          </div>
+            <div class="row">
+                    <h2 class="card-text white-text center-align">Productos en el carrito</h2>
+              <div class="col s12 m12">
+                <div class="card horizontal grey darken-4">
+                  <div class="card-image">
+                    <img class="jugador-img" src="../img/sandungueo.jpg">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <span class="card-title activator red-text card-text">Nombre</span> 
+                      <p class="white-text">Cantidad: 10</p>
+                      <p class="white-text">Precio: 9.99</p>
+                      <span class="white-text right"><h5>$99.99</h5></span>     
+                    </div>
+                    <div class="card-action right-align">
+                      <a href="#detalles_modal" class="modal-trigger waves-effect waves-light blue-text"><i class="material-icons right">edit</i></a>
+                      <a class=" waves-effect waves-light red-text"><i class="material-icons right">delete</i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col s12 m12">
+                <div class="card horizontal grey darken-4">
+                  <div class="card-image">
+                    <img class="jugador-img" src="../img/sandungueo.jpg">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <span class="card-title activator red-text card-text">Nombre</span> 
+                      <p class="white-text">Cantidad: 10</p>
+                      <p class="white-text">Precio: 9.99</p>
+                      <span class="white-text right"><h5>$99.99</h5></span>     
+                    </div>
+                    <div class="card-action right-align">
+                      <a href="#detalles_modal" class="modal-trigger waves-effect waves-light blue-text"><i class="material-icons right">edit</i></a>
+                      <a class=" waves-effect waves-light red-text"><i class="material-icons right">delete</i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+        <!--Pequeño margin para darle espacion al footer pegado-->
+        <div class="footer-espacio"></div>
+    </section>
+        <!--MODAL DE DESCRIPCCION-->
+        <!-- Modal Structure -->
+        <div id="detalles_modal" class="modal grey darken-3 modal-fixed-footer">
+            <div class="modal-content">
+            <h4 class="card-text white-text">Nombre de producto</h4>
+            <img src="../img/wolf2.png" class="producto-img " alt="producto">
+            <br>
+                <div class="row">
+                    <div class="input-field col s12 m6 cantidad">
+                        <select>
+                            <option value="" disabled selected>Elije la cantidad</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label class="white-text">Cantidad</label>
+                    </div>
+                    <div class="col s12 m6 right-align white-text">
+                        <h5>$ 9.99</h5>
+                    </div>
+                    <div class="col s12 m12 right-align white-text">
+                            <h5>Total = $ 9.99</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer grey darken-4">
+                
+                <a  class="waves-effect waves-light btn white-text red darken-3 hide-on-small-only"><i class="material-icons right">add_shopping_cart</i>Modificar</a>
+                <a  class="waves-effect waves-light btn white-text red darken-3 hide-on-med-and-up"><i class="material-icons right">add_shopping_cart</i></a>
+            </div>
+        </div>
+        <!--FIN MODAL DE DESCRIPCCION-->
+        <!--Modal de pagar-->
+        <nav class="pagar">
+            <div class="nav-wrapper">
+              <ul >
+                <li class="right"><a href="final.html" class="waves-effect waves-light btn red darken-3 white-text">Finalizar compra</a></li>
+              </ul>
+            </div>
+          </nav>
+        <!--Modal de pagar-->
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+  </body>
+</html>
