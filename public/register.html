@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <section>
+        <div class="navbar-fixed">
+            <nav>
+              <div class="nav-wrapper" >
+                <a  class="brand-logo left"><img class="fondo_wolf"src="../img/navbar.png" alt="wolf logo"></a>
+                <a href="#modalini" class=" brand-logo iniciar_sesion hide-on-med-and-down modal-trigger">Iniciar sesión</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="large material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropequipos_trigger"><a  href="#equipos"><i class="material-icons right">arrow_drop_down</i>Equipos </a></li>
+                    <li><a href="quienesomos.html">Quienes somos</a></li>     
+                    <li><a href="#patrocinadores">Patrocinadores</a></li>
+                    <li><a href="#contactanos">Contactanos</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                  </ul>
+                  <div class="dropequipos">
+                    <div class="row">
+                        <a href="equipos.html"><img class="col m2 nav-equipos-drop" src="../img/smash blanco.png" alt="smash"></a>
+                        <a href="equipos.html"><img class="col m2 nav-equipos-drop" src="../img/smash blanco.png" alt="smash"></a>
+                        <a href="equipos.html"><img class="col m2 nav-equipos-drop" src="../img/smash blanco.png" alt="smash"></a>
+                        <a href="equipos.html"><img class="col m2 nav-equipos-drop" src="../img/smash blanco.png" alt="smash"></a>
+                        <a href="equipos.html"><img class="col m2 nav-equipos-drop" src="../img/smash blanco.png" alt="smash"></a>
+                        <a href="equipos.html"><img class="col m2 nav-equipos-drop" src="../img/smash blanco.png" alt="smash"></a>
+                    </div>
+                  </div>
+              </div>
+            </nav>
+          </div>
+    
+          <ul class="sidenav public" id="mobile-demo">
+            <a class="iniciar modal-trigger" href="#modalini">Iniciar sesión</a>
+            <a class="close sidenav-close" href="#"><i class="material-icons">close</i></a>
+            <li><a href="index.html">Inicio</a></li>
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header white-text equipo_navbar">Equipos</div>
+                <div class="collapsible-body navbar-equipos">
+                  <ul>
+                    <li><a href="equipos.html">EQUIPO 1</a></li>
+                    <li><a href="">EQUIPO 2</a></li>
+                    <li><a href="">EQUIPO 3</a></li>
+                    <li><a href="">EQUIPO 4</a></li> 
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <li><a href="quienesomos.html">Quienes somos</a></li>     
+            <li><a class="sidenav-close" href="#patrocinadores">Patrocinadores</a></li>
+            <li><a class="sidenav-close" href="#contactanos">Contactanos</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+          </ul>
+          <!-- Modal Structure -->
+          <div id="modalini" class="modal">
+              <div class="modal-content grey darken-3">
+                <h4 class="white-text modal-text">Iniciar seción</h4>
+                <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12 m12">
+                        <input placeholder="example@gmail.com" id="usu" type="text" class="validate white-text">
+                        <label for="usu"  class="white-text">Correo o telefono</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m12">
+                          <input placeholder="Password" id="pas" type="password" class="validate white-text">
+                          <label for="pas" class="white-text">Password</label>
+                        </div>
+                    </div>
+                        <span class="white-text">¿No tienes cuenta? <a class="carmesi-text" href="register.html"><b>Registrate</b></a></span>
+                
+              </div>
+              <div class="modal-footer grey darken-4">
+                <a href="#!" class="modal-close red darken-2 waves-effect waves-white btn-flat white-text right">Iniciar sesión</a>
+                <a href="#!" class="modal-close  waves-effect waves-red btn-flat white-text left">Regresar</a>
+              </div>
+            </form> 
+            </div>
+    </section>
+
+    <!--Formulario de registrer-->
+    <section >
+
+        <div class="container">
+            <form action="">
+                    <div class="row grey darken-3 z-depth-3">
+                        <h2 class="card-text white-text center-align margin-registrate-arriba">Registrate</h2>
+                        <div class="input-field col s12 m12 white-text">
+                            <i class="material-icons prefix">person</i>
+                            <input placeholder="Nombre" id="nombre" type="text" class="validate">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="input-field col s12 m12 white-text">
+                            <i class="material-icons prefix">person_outline</i>
+                            <input placeholder="Apellido" id="Apellido" type="text" class="validate">
+                            <label for="Apellido">Apellido</label>
+                        </div>
+                        <div class="input-field col s12 m12 white-text">
+                            <i class="material-icons prefix">email</i>
+                            <input placeholder="email" id="email" type="email" class="validate">
+                            <label for="email">example@gmail.com</label>
+                        </div>
+                        <div class="input-field col s12 m12 white-text">
+                            <i class="material-icons prefix">lock</i>
+                            <input placeholder="" id="contra" type="password" class="validate">
+                            <label for="contra">Contraseña</label>
+                        </div>
+                        <div class="input-field col s12 m12 white-text">
+                            <i class="material-icons prefix">lock_outline</i>
+                            <input placeholder="" id="repetir_contra" type="password" class="validate">
+                            <label for="repetir_contra">Repetir contraseña</label>
+                        </div>
+                        <div class="col s12 m12 margin-registrate-abajo">
+                            <a href="index.html" class="waves-effect waves-light btn grey darken-4 white-text left">Regresar</a>
+                            <button class="waves-effect waves-light btn red darken-3 white-text right">Aceptar</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+
+    </section>
+    
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+  </body>
+</html>
