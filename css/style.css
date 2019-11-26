@@ -6,6 +6,22 @@
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }   
+/*INICIO registrate*/
+h3.card-text.white-text.left-align.margin-registrate-arriba
+{
+    padding-left: 3%;
+    padding-top: 2vh;
+}
+h2.card-text.white-text.center-align.margin-registrate-arriba
+{
+    padding-top: 2vh;
+}
+.margin-registrate-abajo
+{
+    margin-bottom: 2vh;
+}
+/*FIN registrate*/
+
 /*INICIO TIENDA*/
 .footer-espacio
 {
