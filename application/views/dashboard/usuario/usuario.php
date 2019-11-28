@@ -44,7 +44,6 @@
                       <a href="#email"><span class="white-text email">Administrador</span></a>
                     </div></li>
                     <div>
-                    <li><a href="index.html" class="waves-effect collapsible-header red  white-text"><i class="material-icons white-text">attach_money</i>Ventas</a></li>
                     <ul class="collapsible collapsible-accordion">
                         <li class="red darken-1">
                         <a class="waves-effect collapsible-header white-text"><i class="material-icons white-text">business_center</i>Patrons<i class="material-icons white-text right">arrow_drop_down</i></a>
