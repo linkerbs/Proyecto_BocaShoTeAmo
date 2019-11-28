@@ -77,8 +77,10 @@ class producto extends CI_Controller {
 		if($this->session->userdata('Nivel')==='1')
 		{
 		$config['upload_path']          = './assets/img/producto';
-		
-		
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
+		$config['max_size']             = 1000;
+		$config['max_width']            = 1920;
+		$config['max_height']           = 1080;
 
 		$this->load->library('upload', $config);
         
@@ -138,8 +140,10 @@ class producto extends CI_Controller {
 		
 		echo "ADIOS";
 		$config['upload_path']          = './assets/img/producto';
-		
-		
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
+		$config['max_size']             = 1000;
+		$config['max_width']            = 1920;
+		$config['max_height']           = 1080;
 
 		$this->load->library('upload', $config);
         
