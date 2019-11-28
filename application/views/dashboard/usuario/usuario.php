@@ -20,10 +20,10 @@
                 <a  class="brand-logo left"><div class="sidenav_space">
                 
                   <div class="container_navbar ">
-                    Noticias
-                    
+                    Usuarios
+                    <a  href="<?= site_url('/login/logout'); ?>" class="waves-effect waves-light btn red darken-3 white-text right margin-cerrar"><i class="material-icons left">arrow_back</i>Cerrar sesion</a>
                   </div>
-                  <a href="<?= site_url('/login/logout'); ?>" class="waves-effect waves-light white-text btn red darken-3"><i class="material-icons left white-text">arrow_back</i>Cerrar Sesion</a>
+                  
                   
                 </div></a>
                 <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="large material-icons">menu</i></a>                   
@@ -109,18 +109,17 @@
               <tbody>
               <?php foreach ($data as $list): ?>
                 <tr>
-                    <tr>
                         <td><?php echo $list->Nombres ?></td>
                         <td><?php if($list->Nivel == 1){ echo "Administrador" ; } else { echo "Cliente";}  ?> </td>
                         <td>
-                        <form method="DELETE" action="<?php echo base_url('index.php/usuario/delete/'.$list->Id);?>">
-                       <button type="submit" class="btn btn-danger btn-xs"></button>
+                          <form method="DELETE" action="<?php echo base_url('index.php/usuario/delete/'.$list->Id);?>">
+                          <button type="submit" class="btn btn-danger btn-xs"><i class="material-icons">delete</i></button>
                        </td>
                 </tr>
               </tbody>
               <?php endforeach ?>
             </table> 
-
+            <p class="pagi"><?php echo $links; ?></p>
           <!-- Modal Structure 2-->
           
           </div>

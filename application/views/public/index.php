@@ -6,7 +6,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet" href="<?php echo base_url();?>assets/css/alertify.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -17,8 +17,6 @@
         <div class="navbar-fixed">
             <nav>
               <div class="nav-wrapper" >
-
-             
                 <a  class="brand-logo left"><img class="fondo_wolf"src="<?php echo base_url();?>assets/img/navbar.png" alt="wolf logo"></a>
                 <?php if($this->session->userdata('logged_in')!= "false") { echo '<a href="#modalini" class=" brand-logo iniciar_sesion hide-on-med-and-down modal-trigger">Iniciar sesión</a>';} ?>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="large material-icons">menu</i></a>
@@ -41,22 +39,20 @@
             </nav>
           </div>
     
-          <ul class="sidenav" id="mobile-demo">
-          <?php if($this->session->userdata('logged_in')!= "false") { echo '<a href="#modalini" class=" brand-logo iniciar_sesion hide-on-med-and-down modal-trigger">Iniciar sesión</a>';} ?>
-            <a class="close sidenav-close" href="#"><i class="material-icons">close</i></a>';} ?>
+          <ul class="sidenav public" id="mobile-demo">
+          <?php if($this->session->userdata('logged_in')!= "false") { echo '<a href="#modalini" class="iniciar modal-trigger">Iniciar sesión</a>';} ?>
+            <a class="close sidenav-close" href="#"><i class="material-icons">close</i></a>
             
-            <li><a href="<?php echo base_url();?>application/views/public/index.html">Inicio</a></li>
             <ul class="collapsible">
               <li>
-                <div class="collapsible-header white-text equipo_navbar">Equipos</div>
-                <div class="collapsible-body navbar-equipos">
                 </div>
               </li>
             </ul>
-            <li><a href="<?php echo base_url();?>application/views/public/quienesomos.html">Quienes somos</a></li>     
-            <li><a href="<?php echo base_url();?>application/views/public/index.html#patrocinador">Patrocinadores</a></li>
-            <li><a href="<?php echo base_url();?>application/views/public/index.html#contactanos">Contactanos</a></li>
-            <li><a href="<?php echo base_url();?>application/views/public/tienda.html">Tienda</a></li>
+            <li><a href="<?= site_url('home/'); ?>">Inicio</a></li>
+            <li><a href="<?= site_url('home/quienes'); ?>">Quienes somos</a></li>     
+            <li><a href="<?= site_url('home/'); ?>">Patrocinadores</a></li>
+            <li><a href="<?= site_url('home/'); ?>">Contactanos</a></li>
+            <li><a href="<?= site_url('home/tienda'); ?>">Tienda</a></li>
           </ul>
           <!-- Modal Structure -->
           <div id="modalini" class="modal">
@@ -79,7 +75,7 @@
                 
               </div>
               <div class="modal-footer grey darken-4">
-                <button type = "submit" class="modal-close red darken-2 waves-effect waves-white btn-flat white-text right">Iniciar sesión</button>
+                <button  type = "submit" class="modal-close red darken-2 waves-effect waves-white btn-flat white-text right">Iniciar sesión</button>
                 <a href="#!" class="modal-close  waves-effect waves-red btn-flat white-text left">Regresar</a>
               </div>
             </form> 
@@ -227,5 +223,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="<?php echo base_url();?>assets/js/materialize.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>assets/js/main.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/js/alertify.min.js"></script>
+    
   </body>
 </html>

@@ -80,8 +80,7 @@ class usuario extends CI_Controller {
 		
 				
 				$usuarios =new usuario_model;
-				
-				$usuarios->insert_usuario();				
+				$usuarios->insert_usuario();	
 				redirect( base_url('index.php/usuario')); 				
 		}
 	else

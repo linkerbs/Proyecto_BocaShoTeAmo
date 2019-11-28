@@ -42,23 +42,20 @@
     </div>
 
     <ul class="sidenav public" id="mobile-demo">
-    <?php if($this->session->userdata('logged_in')!= "false") { echo '<a href="#modalini" class=" brand-logo iniciar_sesion hide-on-med-and-down modal-trigger">Iniciar sesión</a>';} ?>
-      <a class="close sidenav-close" href="#"><i class="material-icons">close</i></a>
-      <li><a href="index.html">Inicio</a></li>
-      <ul class="collapsible">
-        <li>
-          <div class="collapsible-header white-text equipo_navbar">Equipos</div>
-          <div class="collapsible-body navbar-equipos">
-          
-          </div>
-        </li>
-      </ul>
-      <li><a href="/">Inicio</a></li>
-                    <li><a href="<?= site_url('home/quienes'); ?>">Quienes somos</a></li>     
-                    <li><a href="<?= site_url('home/'); ?>">Patrocinadores</a></li>
-                    <li><a href="<?= site_url('home/'); ?>">Contactanos</a></li>
-                    <li><a href="<?= site_url('home/'); ?>">Tienda</a></li>
-    </ul>
+          <?php if($this->session->userdata('logged_in')!= "false") { echo '<a href="#modalini" class="iniciar modal-trigger">Iniciar sesión</a>';} ?>
+            <a class="close sidenav-close" href="#"><i class="material-icons">close</i></a>
+            
+            <ul class="collapsible">
+              <li>
+                </div>
+              </li>
+            </ul>
+            <li><a href="<?= site_url('home/'); ?>">Inicio</a></li>
+            <li><a href="<?= site_url('home/quienes'); ?>">Quienes somos</a></li>     
+            <li><a href="<?= site_url('home/'); ?>">Patrocinadores</a></li>
+            <li><a href="<?= site_url('home/'); ?>">Contactanos</a></li>
+            <li><a href="<?= site_url('home/tienda'); ?>">Tienda</a></li>
+          </ul>
     <!-- Modal Structure -->
     <div id="modalini" class="modal">
               <div class="modal-content grey darken-3">

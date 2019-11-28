@@ -5,8 +5,49 @@
 @font-face {
     font-family: "roboto";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-}   
+}  
+p.pagi{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+p strong
+{
+    margin:0.5%;
+    padding: 1%;
+    background: #c62828;
+    color: white;
+} 
+p a
+{
+    margin:0.5%;
+    padding: 1%;
+    background: #212121;
+    color: white;
+}
+.btn-danger
+{
+    background: transparent;
+    color: red;
+    border: red 1px solid;
+    border-radius: 10%;
+}
+.btn-danger:hover
+{
+    background: red;
+    color: white;
+    border: red 1px solid;
+    border-radius: 10%;
+}
 /*INICIO registrate*/
+.margin-cerrar
+{
+    margin-top:1%;
+    margin-right: 1%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
 h3.card-text.white-text.left-align.margin-registrate-arriba
 {
     padding-left: 3%;

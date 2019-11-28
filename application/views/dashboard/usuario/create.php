@@ -6,6 +6,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css"  media="screen,projection"/>
+    <link type="stylesheet" rel="stylesheet" href="<?php echo base_url();?>assets/css/alertify.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width,   initial-scale=1.0"/>
   </head>
@@ -57,9 +58,9 @@
                 <label>Equipo</label>
             </div>
 
-            <div class="input-field col s12 m6 white-text">
+            <div class="input-field col s12 m12 white-text">
             <i class="material-icons prefix">lock</i>
-             <input placeholder="" id="contra" type="password" class="validate" name ="Contraseña">
+             <input placeholder="" id="contra" type="password" class="validate" name ="Contrase�a">
             <label for="contra">Contraseña</label>
           </div>
             
@@ -68,7 +69,7 @@
                     <a href="<?= site_url('usuario/'); ?>" class="waves-effect grey darken-3 btn left">Regresar</a>
                 </div>
                 <div class="col s6 m6">
-                <button type="submit" value = "upload" class="btn btn-primary">Aceptar</button>
+                <button type="submit" value = "upload" class="btn btn-primary red darken-3 right">Aceptar</button>
                     <br><br>
                 </div>
             </div>
@@ -84,5 +85,6 @@
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/highcharts.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/tema.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/grafics.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/alertify.min.js"></script>
   </body>
 </html>

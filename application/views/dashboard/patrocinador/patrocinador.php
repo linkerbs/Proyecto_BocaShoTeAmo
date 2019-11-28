@@ -20,6 +20,7 @@
                 <a  class="brand-logo left"><div class="sidenav_space">
                   <div class="container_navbar ">
                     Patrocinadores
+                    <a  href="<?= site_url('/login/logout'); ?>" class="waves-effect waves-light btn red darken-3 white-text right margin-cerrar"><i class="material-icons left">arrow_back</i>Cerrar sesion</a>
                   </div>
                 </div></a>
                 <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="large material-icons">menu</i></a>                   
@@ -113,7 +114,7 @@
                       <td>
                       <form method="DELETE" action="<?php echo base_url('index.php/patrocinador/delete/'.$list->Id);?>">
                        <a href="<?php echo base_url('index.php/patrocinador/edit/'.$list->Id)?>"><i class="material-icons blue-text">edit</i></a>
-                       <button type="submit" class="btn btn-danger btn-xs"></button>
+                       <button type="submit" class="btn btn-danger btn-xs"><i class="material-icons">delete</i></button>
                       </form>            
                       </td>
               </tr>

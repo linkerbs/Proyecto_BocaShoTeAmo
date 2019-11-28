@@ -39,22 +39,20 @@
             </nav>
           </div>
     
-          <ul class="sidenav" id="mobile-demo">
-          <?php if($this->session->userdata('logged_in')!= "false") { echo '<a href="#modalini" class=" brand-logo iniciar_sesion hide-on-med-and-down modal-trigger">Iniciar sesión</a>';} ?>
+          <ul class="sidenav public" id="mobile-demo">
+          <?php if($this->session->userdata('logged_in')!= "false") { echo '<a href="#modalini" class="iniciar modal-trigger">Iniciar sesión</a>';} ?>
             <a class="close sidenav-close" href="#"><i class="material-icons">close</i></a>
-            <li><a href="<?php echo base_url();?>application/views/public/index.html">Inicio</a></li>
+            
             <ul class="collapsible">
               <li>
-                <div class="collapsible-header white-text equipo_navbar">Equipos</div>
-                <div class="collapsible-body navbar-equipos">
-                
                 </div>
               </li>
             </ul>
-            <li><a href="<?php echo base_url();?>application/views/public/quienesomos.html">Quienes somos</a></li>     
-            <li><a href="<?php echo base_url();?>application/views/public/index.html#patrocinador">Patrocinadores</a></li>
-            <li><a href="<?php echo base_url();?>application/views/public/index.html#contactanos">Contactanos</a></li>
-            <li><a href="<?php echo base_url();?>application/views/public/tienda.html">Tienda</a></li>
+            <li><a href="<?= site_url('home/'); ?>">Inicio</a></li>
+            <li><a href="<?= site_url('home/quienes'); ?>">Quienes somos</a></li>     
+            <li><a href="<?= site_url('home/'); ?>">Patrocinadores</a></li>
+            <li><a href="<?= site_url('home/'); ?>">Contactanos</a></li>
+            <li><a href="<?= site_url('home/tienda'); ?>">Tienda</a></li>
           </ul>
         <!-- Modal Structure -->
         <div id="modalini" class="modal">

@@ -64,3 +64,4 @@ $route['equipo/(:num)'] = '/equipo/index';
 $route['jugador/(:num)'] = '/jugador/index';
 $route['producto/(:num)'] = '/producto/index';
 $route['equipos/(:any)'] = "index.php/equipos/$1";
+$route['usuario/(:num)'] = "/usuario/index";

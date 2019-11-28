@@ -23,5 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
   team_trigger.onmouseout = function(){ team_show.classList.remove("dropequipossee")};
   team_show.onmouseout = function(){ team_show.classList.remove("dropequipossee")};
   
+  function guardar_usu()
+  {
+    alertify.alert("This is an alert dialog.", function(){
+    alertify.message('OK');
+  });
+  }
 
  
