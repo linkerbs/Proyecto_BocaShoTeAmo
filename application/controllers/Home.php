@@ -66,7 +66,7 @@ class Home extends CI_Controller {
 		$query['productos'] = $producto->get_productosc();
 		$this->load->view('public/tienda',$query);
 		}else{
-			echo "Access Denied";
+			redirect('home/');
 		}
    
 		
@@ -79,7 +79,7 @@ class Home extends CI_Controller {
 			$carros->insert_carro($data);				
 			redirect('home/view_carro/'.$this->session->userdata('Id')); 
 		}else{
-			echo "Access Denied";
+			redirect('home/');
 		}
 
 
@@ -122,7 +122,7 @@ class Home extends CI_Controller {
 
 	   redirect('home/tienda');
 		}else{
-			echo "Access Denied";
+			redirect('home/');
 		}
    
 		
@@ -135,7 +135,7 @@ class Home extends CI_Controller {
 			$query['carros'] = $carros->get_carro($id);				
 			$this->load->view('public/pagar',$query);
 		}else{
-			echo "Access Denied";
+			redirect('home/');
 		}
    
 		
@@ -150,7 +150,7 @@ class Home extends CI_Controller {
 			
 			redirect('home');
 		}else{
-			echo "Access Denied";
+			redirect('home/');
 		}
    
 		
